@@ -1,0 +1,240 @@
+.main {
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+.main-line {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background: rgba(34, 34, 34, 1);
+    position: absolute;
+    top: 6px;
+}
+
+.p2 {
+    font-size: 22px;
+    color: #222;
+    line-height: 32px;
+    font-weight: bold;
+    vertical-align: baseline;
+    padding-left: 10px;
+}
+
+.p3 {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.tv-top {
+    position: relative;
+    margin-top: 30px;
+}
+
+.tv-top-right {
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 108px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #DF0010;
+    border-radius: 30px;
+    text-align: center;
+    color: #DF0010;
+    float: right;
+}
+
+.icon-tv_icon {
+    font-size: 20px;
+}
+
+.contain {
+    display: inline-block;
+    border: solid 3px #f3f3f3;
+    margin-right: 5px;
+    background: #ffffff;
+    /* position: relative; */
+}
+
+.tv-bottom .contain:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.contain:hover {
+    border: #df0010 3px solid;
+    box-sizing: border-box;
+}
+.contain:hover p{
+    text-decoration: underline;
+}
+
+.tv-bottom-left {
+    width: 349px;
+    height: 286px;
+    background: #ffffff;
+    position: relative;
+}
+
+.disco {
+    position: absolute;
+    left: 0;
+    top: 186px;
+    z-index: 2;
+}
+
+.disco div {
+    padding: 0 10px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    border-top-right-radius: 14px;
+    color: #fff;
+    font-size: 13px;
+    background: -webkit-linear-gradient(0deg, #FD5340 0%, #FF3D4B 100%)
+}
+
+.tv-bottom-left-img {
+    width: 200px;
+    height: 200px;
+    /* border: 1px red solid; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.tv-bottom-left-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.tv-bottom-left {
+    padding-top: 216px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.tv-bottom-left p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.RMB-span {
+    font-size: 14px;
+    color: #df0010;
+    font-weight: bold;
+}
+
+.num-span {
+    font-size: 22px;
+    color: #df0010;
+    font-weight: bold;
+}
+
+.pre-span {
+    color: #969696;
+}
+
+.btn-buy {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 15px;
+    background: -webkit-linear-gradient(0deg, #fd6140 0%, #f00919 100%)
+}
+
+/* 新品推荐=== */
+.new-rec{
+    padding-bottom: 38px;
+}
+.new-rec-right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* .new-bottom-left{
+    height: 384px;
+    width: 262px;
+    background: #ffffff;
+    position: relative;
+} */
+.new-bottom img {
+    width: 262px;
+    height: 262px;
+}
+
+.new-h3 {
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    margin-top: 9px;
+    color: #666;
+    font-size: 14px;
+}
+.contain:hover .new-h3{
+    text-decoration: underline;
+}
+.contain:hover .new-p{
+    text-decoration: underline;
+}
+.new-p {
+    margin-top: 4px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    color: #333;
+}
+.contain:nth-child(4n) {
+    margin-right: 0px;
+}
+/* 精选活动 */
+
+.activity-top{
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 280px; */
+}
+/* .activity-top img{
+    height: 280px;
+    position: absolute;
+    left: -160px;
+    top: 58px;
+} */
+.act-a{
+    display: block;
+    overflow: hidden;
+    height: 280px;
+}
+.act-img{
+    margin-top: 10px;
+    height: 280px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.activity .contain{
+    margin-right: 3px;
+    margin-top: 10px;
+}
+.activity .contain img{
+    width: 262px;
+    height: 262px;
+}

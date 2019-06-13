@@ -105,17 +105,46 @@ $(function () {
     //     console.log(123);
     // })
     // $("#checkbox").prop('checked',true);
-    $("#checkbox").click(function(){
+    $("#checkbox").click(function () {
         console.log(($("#checkbox").prop("checked")));
     })
-    
+
 
     //console.log$("#mobile_code"));
     $(".login-btn").click(function () {
+        let mobile = oMobile.val().trim();
+        let password = oPassword.val().trim();
         if ($("#mobile")[0].isOK && $("#mobile_code")[0].isOK &&
             $("#password_confirm")[0].isOK && $("#capt")[0].isOK
         ) {
-            window.location.href = "https://www.baidu.com/"
+            $.post({
+                url: "../server/api/register.php",
+                data: {
+                    "mobile": mobile,
+                    "password": password
+                },
+                success(res) {
+                    console.log(res);
+
+                    setTimeout(function () {
+
+                        document.write("注册成功，即将跳转到登录页面");
+                        setTimeout(function () {
+                            window.location.href = "http://localhost/happy/html/login.html"
+                        }, 2000)
+                    }, 1500);
+                }
+
+            })
+
+            // setTimeout(function () {
+            //     document.write("注册成功，即将跳转到登录页面");
+            //     setTimeout(function () {
+            //         window.location.href = "http://localhost/happy/html/login.html"
+            //     }, 2000)
+            // }, 1500);
+
+
         }
         console.log($("#mobile_code")[0].isOK);
     })

@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/register.css">
     <link rel="shortcut icon" href="#" />
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/include.js"></script>
 </head>
 
 <body>
     <div id="register">
         <div class="content">
-            <div class="reg-top">
-                <img src="../img/logo.jpg" alt="">
-                <img src="../img/top_center.jpg" alt="">
+            <div>
+                <include src="../html/login-head.html"></include>
             </div>
             <div class="reg-center">
                 <div class="reg-big clearfix">
@@ -27,7 +29,7 @@
                         <span>用户注册</span>
                         <div class="reg-right-2">
                             已有账号
-                            <a href="">在此登录</a>
+                            <a href="http://localhost/happy/html/login.html">在此登录</a>
                         </div>
                     </div>
                     <div class="reg-form">
@@ -66,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="item1">
-                                <input type="text" placeholder="请输入密码" name="password" id="password">
+                                <input type="password" placeholder="请输入密码" name="password" id="password">
                                 <div class="err-box">
                                     <div class="err-msg3">
                                         请输入您的密码,您的密码可能为字母、数字或符号组合
@@ -77,7 +79,8 @@
                                 </div>
                             </div>
                             <div class="item1">
-                                <input type="text" placeholder="请再次输入密码" name="password_confirm" id="password_confirm">
+                                <input type="password" placeholder="请再次输入密码" name="password_confirm"
+                                    id="password_confirm">
                                 <div class="err-box">
                                     <div class="err-msg4">
                                         请输入您的密码,您的密码可能为字母、数字或符号组合
@@ -114,28 +117,13 @@
                         </form>
                     </div>
                 </div>
-
             </div>
-            <div class="footer_bottom">
-                <div class="w1200">
-                    <p>
-                        <span class="font_arial">Copyright© 2006-2019 happigo. All Rights Reserved </span>
-                        免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
-                        <br>
-                        湘ICP备17009657号 信息网络传播视听节目许可证号：1810530
-                    </p>
-                    <p class="footer_p">
-                        <a href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/2782875193.html" target="_blank">
-                            <img src="https://ecimg.happigo.com/resource/web/images/foot_img3.png"></a>
-                        <a href="https://search.szfw.org/cert/l/CX20150428007576007720" target="_blank">
-                            <img src="https://ecimg.happigo.com/resource/web/images/foot_img4.png"></a>
-                    </p>
-                </div>
+            <div>
+                <include src="../html/login-footer.html"></include>
             </div>
         </div>
     </div>
-    <script src="../lib/jquery-3.4.1.js"></script>
-    <script src="../js/register.js"></script>
+
 </body>
 
 </html>

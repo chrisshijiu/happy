@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="#" />
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/include.js"></script>
+</head>
+
+<body>
+    <div id="login">
+        <!-- 头部 -->
+
+        <div class="content">
+            <div>
+                <include src="../html/login-head.html"></include>
+            </div>
+            <!-- 中部 -->
+            <div class="login-box clearfix">
+                <div class="login-box-left"></div>
+                <div class="login-box-right">
+                    <div class="reg-box-right-1">
+                        <span>登录快乐购</span>
+                        <div class="reg-box-right-2">
+                            还没有快乐购账号
+                            <a href="http://localhost/happy/html/register.html">快速注册</a>
+                        </div>
+                    </div>
+
+                    <!-- radio -->
+                    <div class="radio_box">
+                        <span class="s_radio">
+                            <input type="radio" id="radio1" name="r1" value="1" checked="">
+                            <label for="radio1" class="r_txt">快捷登录</label>
+                        </span>
+                        <span class="s_radio">
+                            <input type="radio" id="radio2" name="r1" value="0">
+                            <label for="radio2" class="r_txt">普通密码登录</label>
+                        </span>
+                    </div>
+                    <!-- 手机号码 -->
+                    <div class="mc">
+                        <form action="">
+                            <div class="item1">
+                                <input type="text" placeholder="请输入手机号码" name="mobile" id="mobile">
+                                <div class="err-box">
+                                    <div class="err-msg1">
+                                        请输入11位手机号码
+                                    </div>
+                                    <div class="err-msg1-warm">
+                                        手机格式错误！
+                                    </div>
+                                    <div class="err-msg1-none">
+                                        手机号不能为空！
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item2">
+                                <input type="text" placeholder="请输入短信验证码" name="mobile_code" id="mobile_code">
+                                <a href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <div>获取验证码</div>
+                                </a>
+                                <div class="err-box">
+                                    <div class="err-msg2">
+                                        请输入发送给您手机上的验证码
+                                    </div>
+                                    <div class="err-msg2-warm">
+                                        验证码格式错误！
+                                    </div>
+                                    <div class="err-msg2-none">
+                                        验证码不能为空！
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item1 item5">
+                                <div class="login-btn">
+                                    <a href="javascript:void(0)">立即登录</a>
+                                </div>
+                            </div>
+                            <div class="coagent">
+                                <h5>您可以使用以下账号登录</h5>
+                                <ul>
+                                    <li>
+                                        <a class="hz_xl" href="https://www.happigo.com/shop/api.php?act=toqq"
+                                            title="QQ"><img src="../img/qq.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_qq" href="https://www.happigo.com/shop/api.php?act=tosina"
+                                            title="新浪微博"><img src="../img/weibo.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_zfb" href="https://www.happigo.com/shop/api.php?act=zfb"
+                                            title="支付宝"><img src="../img/zhifubao.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_login_weixin"
+                                            href="https://www.happigo.com/shop/api.php?act=weixin" title="微信"><img
+                                                src="https://ecimg.happigo.com/resource/web/images/icon_wechat_login.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mc" style="display: none">
+                        <form action="">
+                            <div class="item1">
+                                <input type="text" placeholder="已验证手机/邮箱/用户名" name="username" id="username">
+                                <div class="err-box">
+                                    <div class="err-msg1">
+                                        请输入11位手机号码
+                                    </div>
+                                    <div class="err-msg1-warm">
+                                        手机格式错误！
+                                    </div>
+                                    <div class="err-msg1-none">
+                                        手机号不能为空！
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="item1">
+                                <input type="password" placeholder="请输入密码" name="password" id="password">
+                                <div class="err-box">
+                                    <!-- <div class="err-msg3">
+                                        请输入您的密码,您的密码可能为字母、数字或符号组合
+                                    </div> -->
+                                    <!-- <div class="err-msg3-warm">
+                                        密码格式错误！请输入6-16位数字或字母的密码
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- 验证码 -->
+                            <div class="item item2-2">
+                                <input type="text" placeholder="验证码" name="capt" id="capt">
+                                <img src="" alt="">
+                                <a href="javascript:void(0)">换一张</a>
+                                <div class="err-box">
+                                    <div class="err-msg2">
+                                        请输入右侧验证码
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 记住密码 -->
+                            <div class="item1 item5">
+                                <div class="agree">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="">记住用户名
+                                        <span>
+                                            <a href="">忘记密码？</a>
+
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="login-btn">
+                                    <a href="javascript:void(0)">立即注册</a>
+                                </div>
+
+                            </div>
+                            <div class="coagent">
+                                <h5>您可以使用以下账号登录</h5>
+                                <ul>
+                                    <li>
+                                        <a class="hz_xl" href="https://www.happigo.com/shop/api.php?act=toqq"
+                                            title="QQ"><img src="../img/qq.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_qq" href="https://www.happigo.com/shop/api.php?act=tosina"
+                                            title="新浪微博"><img src="../img/weibo.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_zfb" href="https://www.happigo.com/shop/api.php?act=zfb"
+                                            title="支付宝"><img src="../img/zhifubao.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="hz_login_weixin"
+                                            href="https://www.happigo.com/shop/api.php?act=weixin" title="微信"><img
+                                                src="https://ecimg.happigo.com/resource/web/images/icon_wechat_login.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+
+            <div>
+                <include src="../html/login-footer.html"></include>
+            </div>
+            <!-- 底部 -->
+</body>
+
+</html>

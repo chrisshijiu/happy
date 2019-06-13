@@ -1,3 +1,4 @@
+/* 头 */
 .content {
     width: 1003px;
     margin: 0 auto;
@@ -12,27 +13,28 @@
     margin-top: 18px;
 }
 
-.reg-center {
-    padding-left: 30px;
-}
-
-.reg-big {
-    float: left;
-    padding-top: 70px;
-    display: block;
-
+/* 中部 */
+.login-box-right {
+    background: url(../img/login_icon_list.png) 0px -115px no-repeat;
 }
 
 .clearfix::after {
     clear: both;
+    content: '';
+    display: block;
     overflow: hidden;
     visibility: hidden;
     height: 0;
-    content: "";
-    display: block;
 }
 
-.reg-right {
+.login-box-left {
+    float: left;
+    width: 600px;
+    text-align: center;
+    padding-top: 23px;
+}
+
+.login-box-right {
     padding: 0 33px;
     float: left;
     width: 367px;
@@ -41,14 +43,13 @@
     box-sizing: border-box;
     margin-top: 40px;
     margin-left: 20px;
-    background: url(../img/login_icon_list.png) 0px -115px no-repeat;
 }
 
-.reg-right-1 {
+.reg-box-right-1 {
     padding-bottom: 60px;
 }
 
-.reg-right-1 span {
+.reg-box-right-1 span {
     font-size: 22px;
     height: 38px;
     line-height: 38px;
@@ -57,19 +58,29 @@
     color: #F11D20;
 }
 
-.reg-right-2 {
+.reg-box-right-2 {
     font-size: 12px;
     color: #8c8c8c;
     line-height: 38px;
 }
 
-.reg-right-2 a {
+.reg-box-right-2 a {
     color: #c41f3a;
     font-size: 12px;
 }
 
-.reg-right-2 {
+.reg-box-right-2 {
     float: right;
+}
+
+.s_radio {
+    font-size: 12px;
+    padding-right: 45px;
+}
+
+/* 手机号和短信验证 */
+.item1 {
+    margin-top: 10px;
 }
 
 .item1 input {
@@ -150,43 +161,15 @@
 
 .item5 input {
     width: 12px;
-}
 
-.agree {
-    padding-top: 5px;
 }
-
-.agree label span a {
-    color: #c41f3a;
-}
-
-.agree label {
-    color: #767676;
-    padding-left: 6px;
+.item5 label{
     font-size: 12px;
 }
-
-.footer_bottom p {
-    padding-top: 10px;
-    text-align: center;
-    font-family: "宋体";
-    color: #7e7e7e;
-    line-height: 25px;
-    font-size: 12px;
+.item5 label span a{
+    color: #8c8c8c;
+    margin-left: 150px;
 }
-
-.font_arial {
-    font-family: Arial;
-    color: #666666;
-    vertical-align: baseline;
-    font-size: 12px;
-}
-
-.footer_bottom .footer_p {
-    padding: 30px 0 40px 0px
-}
-
-/* 表单验证CSS */
 .err-msg1 {
     display: none;
 }
@@ -215,20 +198,35 @@
     display: none;
 }
 
-.err-msg3-warm {
-    color: red;
-    display: none;
+/* 其他登录方式 */
+.coagent {
+    font-size: 12px;
+    margin-top: 20px;
 }
 
-.err-msg4-warm {
-    color: red;
-    display: none;
+.coagent li {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
-.err-msg3 {
-    display: none;
+/* 底部 */
+.footer_bottom p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "宋体";
+    color: #7e7e7e;
+    line-height: 25px;
+    font-size: 12px;
 }
 
-.err-msg4 {
-    display: none;
+.font_arial {
+    font-family: Arial;
+    color: #666666;
+    vertical-align: baseline;
+    font-size: 12px;
+}
+
+.footer_bottom .footer_p {
+    padding: 30px 0 40px 0px
 }

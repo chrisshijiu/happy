@@ -13,7 +13,7 @@ $(function () {
             var arr = JSON.parse(res);
             console.log(arr);
             var str = arr.map(function (item) {
-                return `<a href="" class="contain">
+                return `<a href="./html/detail.html" class="contain">
                 <div class="tv-bottom-left">
                     <div class="tv-bottom-left-img">
                         <img src="${item.img}" alt="">
